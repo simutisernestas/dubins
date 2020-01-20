@@ -1,16 +1,6 @@
 # Dubin's Car
 
-## Useful resource for algorithms
- - [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics#path-planning)
-
-## Installation
-After ensuring that you have a working version of Python 3 and Git, you can obtain the source code by cloning this repository as so:
-```bash
-git clone https://github.com/cisprague/dubins.git
-```
-
-## Description
-In this assignment you're tasked to implement a robotic planning method in order to drive a Dubin's car, with the following dynamics,
+In this assignment I implemented a robotic planning method in order to drive a Dubin's car, with the following dynamics,
 ```python
 x[t+1]     = x[t]     + cos(theta[t])
 y[t+1]     = y[t]     + sin(theta[t])
@@ -29,11 +19,7 @@ Side note: Pontryagin's maximum principle has shown that it is optimal to choose
 
 ## Tasks
 
-We'll consider two graded tasks in order of difficulty:
- - **E**: Reach the target with spherical obstacles.
- - **C**: Reach the target with line obstacles
-
-Using the API, explained below, generate a sequence of steering angle commands `controls` and a sequence of times `times`, between which the commands are executed, that would yield a collision free and task fulfilling trajectory.
+Using the API, explained below, task was to generate a sequence of steering angle commands `controls` and a sequence of times `times`, between which the commands are executed, that would yield a collision free and task fulfilling trajectory.
 
 You should end up with a solution that looks something like this:
 
